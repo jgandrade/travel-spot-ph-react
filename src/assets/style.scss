@@ -173,6 +173,19 @@ footer {
     }
 }
 
+@media only screen and (min-width: 567px) {
+    main {
+        color: #2b2f3d;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .card {
+            align-self: flex-start;
+            margin: 1em 1em;
+        }
+    }
+
+}
+
 @media only screen and (min-width: 768px) {
     .hero {
         margin-top: 0;
@@ -185,7 +198,6 @@ footer {
         padding-right: 20em;
 
         h2 {
-            
             margin-top: 5em;
             color: #1b1e27;
         }
@@ -199,39 +211,28 @@ footer {
         }
     }
 
-    main {
-        color: #2b2f3d;
-        flex-direction: row;
-        flex-wrap: wrap;
-        .card {
-            align-self: flex-start;
-            margin: 1em 1em;
-        }
-    }
-
+    
     footer {
         font-size: 1.3em;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    nav{
+    nav {
         padding: 0 10em;
     }
 
-    .hero{
-        p{
+    .hero {
+        p {
             padding-left: 4.5em;
             padding-right: 15em;
         }
-        h2{
+        h2 {
             padding-left: 2em;
             font-size: 2em;
         }
-        a{
+        a {
             margin-left: 4em;
         }
     }
-
 }
-

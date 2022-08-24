@@ -165,6 +165,17 @@ footer p {
   font-size: 0.5em;
 }
 
+@media only screen and (min-width: 567px) {
+  main {
+    color: #2b2f3d;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .card {
+    align-self: flex-start;
+    margin: 1em 1em;
+  }
+}
 @media only screen and (min-width: 768px) {
   .hero {
     margin-top: 0;
@@ -186,15 +197,6 @@ footer p {
   }
   .hero a {
     align-self: flex-start;
-  }
-  main {
-    color: #2b2f3d;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  main .card {
-    align-self: flex-start;
-    margin: 1em 1em;
   }
   footer {
     font-size: 1.3em;
