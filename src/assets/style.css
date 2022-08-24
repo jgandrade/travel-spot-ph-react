@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Oswald:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", "Quicksand", "Oswald", "Sans serif", "Merriweather", "Serif";
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ceeceb;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 0em 1em;
+}
+nav h1 {
+  font-size: 0.9em;
+  letter-spacing: -0.05em;
+}
+nav a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 0.9em;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5em;
+  padding: 0 1.5em;
+}
+.hero h2 {
+  align-self: flex-start;
+  font-family: "Merriweather", "serif";
+  margin-bottom: 0.6em;
+}
+.hero p {
+  font-size: 0.9em;
+}
+.hero a {
+  margin: 3em 0;
+  text-decoration: none;
+  border-radius: 0.3em;
+  color: white;
+  background-color: #00b2b2;
+  padding: 0.4em 1em;
+}
+
+main {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .card {
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  font-size: 0.8em;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+main .card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .card img ~ * {
+  padding: 0 1.2em;
+}
+main .card img + div {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  color: #034c5a;
+  margin-top: 0.6em;
+}
+main .card img + div h3 + h3 {
+  margin-left: 0.5em;
+  font-weight: 400;
+  color: gray;
+}
+main .card img + div + p {
+  padding: 0.7em 1.8em;
+  font-size: 0.7em;
+  color: #222222;
+}
+main .card p + div {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+main .card p + div p {
+  font-size: 0.7em;
+  color: gray;
+}
+main .card p + div div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 1em;
+}
+main .card p + div div p {
+  border-radius: 5em;
+  color: #2e3755;
+  background-color: #e4f1f1;
+  padding: 0.1em 0.3em;
+  margin: 0.3em;
+  font-weight: 500;
+}
+main .card a {
+  text-decoration: none;
+  margin: 1em 0;
+}
+main .card button {
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  background-color: #00b2b2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  height: 50px;
+  background-color: #034c5a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin-top: 0;
+    background-image: url("../../public/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 3em;
+    padding-right: 20em;
+  }
+  .hero h2 {
+    margin-top: 5em;
+    color: #1b1e27;
+  }
+  .hero p {
+    font-weight: 500;
+    color: #232631;
+  }
+  .hero a {
+    align-self: flex-start;
+  }
+  main {
+    color: #2b2f3d;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .card {
+    align-self: flex-start;
+    margin: 1em 1em;
+  }
+  footer {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  nav {
+    padding: 0 10em;
+  }
+  .hero p {
+    padding-left: 4.5em;
+    padding-right: 15em;
+  }
+  .hero h2 {
+    padding-left: 2em;
+    font-size: 2em;
+  }
+  .hero a {
+    margin-left: 4em;
+  }
+}/*# sourceMappingURL=style.css.map */

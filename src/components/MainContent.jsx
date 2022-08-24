@@ -12,9 +12,10 @@ function MainContent() {
     });
 
     return (
-        <main>
-            {travelCards}
-        </main>
+            <main id="main">
+                <h1>Places</h1>
+                {travelCards}
+            </main>
     );
 }
 
